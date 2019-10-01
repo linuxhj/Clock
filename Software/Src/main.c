@@ -1,5 +1,6 @@
 #include "stm32f4xx_hal.h"
 #include "led.h"
+#include "lcd.h"
 
 
 static void SystemClock_Config(void);
@@ -9,7 +10,9 @@ int main(void)
 {
 	HAL_Init();
 	LEDInit();
+	LED_Ctrl(LED0, LED_ON);
 	SystemClock_Config();
+	LCD_Init();
 	
 	while(1);
 	return 0;

@@ -25,8 +25,45 @@ void LEDInit(void)
   GPIO_InitStructure.Pin = PIN_LED2;
   HAL_GPIO_Init(PORT_LED2, &GPIO_InitStructure);	
 	
-	HAL_GPIO_WritePin(PORT_LED0, PIN_LED0, GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(PORT_LED1, PIN_LED1, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(PORT_LED0, PIN_LED0, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(PORT_LED1, PIN_LED1, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(PORT_LED2, PIN_LED2, GPIO_PIN_SET);
 }
 
+void LED_Ctrl(eLED led_name, eLED_MODE mode)
+{
+	if(mode != 0)
+	{
+		switch (led_name)
+		{
+			case LED0:
+				HAL_GPIO_WritePin(PORT_LED0, PIN_LED0, GPIO_PIN_RESET);
+				break;
+			case LED1:
+				HAL_GPIO_WritePin(PORT_LED1, PIN_LED1, GPIO_PIN_RESET);
+				break;
+			case LED2:
+				HAL_GPIO_WritePin(PORT_LED2, PIN_LED2, GPIO_PIN_RESET);
+				break;
+			default:
+				break;
+		}
+	}
+	else
+	{
+		switch (led_name)
+		{
+			case LED0:
+				HAL_GPIO_WritePin(PORT_LED0, PIN_LED0, GPIO_PIN_SET);
+				break;
+			case LED1:
+				HAL_GPIO_WritePin(PORT_LED1, PIN_LED1, GPIO_PIN_SET);
+				break;
+			case LED2:
+				HAL_GPIO_WritePin(PORT_LED2, PIN_LED2, GPIO_PIN_SET);
+				break;
+			default:
+				break;	
+		}			
+	}
+}
