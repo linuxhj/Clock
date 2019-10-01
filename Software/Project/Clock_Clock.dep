@@ -1,18 +1,18 @@
 Dependencies for Project 'Clock', Target 'Clock': (DO NOT MODIFY !)
-F (..\Src\main.c)(0x5D920639)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+F (..\Src\main.c)(0x5D920639)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\main.o --omf_browse .\main.crf --depend .\main.d)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x58232FF4)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x58232FE8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x58232FE7)
@@ -33,20 +33,20 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
 I (..\Inc\led.h)(0x5BE19254)
-F (..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c)(0x58232FE6)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\stm32f4xx_hal.o --omf_browse .\stm32f4xx_hal.crf --depend .\stm32f4xx_hal.d)
+F (..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c)(0x58232FE6)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\stm32f4xx_hal.o --omf_browse .\stm32f4xx_hal.crf --depend .\stm32f4xx_hal.d)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x58232FF4)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x58232FE8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x58232FE7)
@@ -66,20 +66,20 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
-F (..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c)(0x58232FE2)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\stm32f4xx_hal_rcc.o --omf_browse .\stm32f4xx_hal_rcc.crf --depend .\stm32f4xx_hal_rcc.d)
+F (..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c)(0x58232FE2)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\stm32f4xx_hal_rcc.o --omf_browse .\stm32f4xx_hal_rcc.crf --depend .\stm32f4xx_hal_rcc.d)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x58232FF4)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x58232FE8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x58232FE7)
@@ -99,20 +99,20 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
-F (..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c)(0x58232FE4)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\stm32f4xx_hal_rcc_ex.o --omf_browse .\stm32f4xx_hal_rcc_ex.crf --depend .\stm32f4xx_hal_rcc_ex.d)
+F (..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c)(0x58232FE4)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\stm32f4xx_hal_rcc_ex.o --omf_browse .\stm32f4xx_hal_rcc_ex.crf --depend .\stm32f4xx_hal_rcc_ex.d)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x58232FF4)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x58232FE8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x58232FE7)
@@ -132,20 +132,20 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
-F (..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc.c)(0x58232FE5)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\stm32f4xx_hal_rtc.o --omf_browse .\stm32f4xx_hal_rtc.crf --depend .\stm32f4xx_hal_rtc.d)
+F (..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc.c)(0x58232FE5)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\stm32f4xx_hal_rtc.o --omf_browse .\stm32f4xx_hal_rtc.crf --depend .\stm32f4xx_hal_rtc.d)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x58232FF4)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x58232FE8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x58232FE7)
@@ -165,20 +165,20 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
-F (..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c)(0x58232FE3)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\stm32f4xx_hal_uart.o --omf_browse .\stm32f4xx_hal_uart.crf --depend .\stm32f4xx_hal_uart.d)
+F (..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c)(0x58232FE3)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\stm32f4xx_hal_uart.o --omf_browse .\stm32f4xx_hal_uart.crf --depend .\stm32f4xx_hal_uart.d)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x58232FF4)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x58232FE8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x58232FE7)
@@ -198,20 +198,20 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
-F (..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c)(0x58232FE4)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\stm32f4xx_hal_gpio.o --omf_browse .\stm32f4xx_hal_gpio.crf --depend .\stm32f4xx_hal_gpio.d)
+F (..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c)(0x58232FE4)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\stm32f4xx_hal_gpio.o --omf_browse .\stm32f4xx_hal_gpio.crf --depend .\stm32f4xx_hal_gpio.d)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x58232FF4)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x58232FE8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x58232FE7)
@@ -231,20 +231,20 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
-F (..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c)(0x58232FE6)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\stm32f4xx_hal_dma.o --omf_browse .\stm32f4xx_hal_dma.crf --depend .\stm32f4xx_hal_dma.d)
+F (..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c)(0x58232FE6)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\stm32f4xx_hal_dma.o --omf_browse .\stm32f4xx_hal_dma.crf --depend .\stm32f4xx_hal_dma.d)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x58232FF4)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x58232FE8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x58232FE7)
@@ -264,20 +264,20 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
-F (..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c)(0x58232FE3)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\stm32f4xx_hal_cortex.o --omf_browse .\stm32f4xx_hal_cortex.crf --depend .\stm32f4xx_hal_cortex.d)
+F (..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c)(0x58232FE3)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\stm32f4xx_hal_cortex.o --omf_browse .\stm32f4xx_hal_cortex.crf --depend .\stm32f4xx_hal_cortex.d)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x58232FF4)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x58232FE8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x58232FE7)
@@ -297,20 +297,20 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
-F (..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c)(0x58232FE4)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\stm32f4xx_hal_pwr.o --omf_browse .\stm32f4xx_hal_pwr.crf --depend .\stm32f4xx_hal_pwr.d)
+F (..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c)(0x58232FE4)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\stm32f4xx_hal_pwr.o --omf_browse .\stm32f4xx_hal_pwr.crf --depend .\stm32f4xx_hal_pwr.d)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x58232FF4)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x58232FE8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x58232FE7)
@@ -330,20 +330,20 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
-F (..\Src\led.c)(0x5BE194CC)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\led.o --omf_browse .\led.crf --depend .\led.d)
+F (..\Src\led.c)(0x5BE194CC)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\led.o --omf_browse .\led.crf --depend .\led.d)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x58232FF4)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x58232FE8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x58232FE7)
@@ -365,20 +365,20 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
 I (..\Inc\led.h)(0x5BE19254)
 F (..\Inc\led.h)(0x5BE19254)()
-F (..\Src\stm32f4xx_it.c)(0x5BE82CE8)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\stm32f4xx_it.o --omf_browse .\stm32f4xx_it.crf --depend .\stm32f4xx_it.d)
+F (..\Src\stm32f4xx_it.c)(0x5BE82CE8)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\stm32f4xx_it.o --omf_browse .\stm32f4xx_it.crf --depend .\stm32f4xx_it.d)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x58232FF4)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x58232FE8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x58232FE7)
@@ -407,16 +407,16 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5CEB79E4)
 I (..\uCOS II\Source\ucos_ii.h)(0x50104F06)
 I (..\uCOS II\Port\os_cfg.h)(0x59F22B0B)
 I (..\uCOS II\Port\os_cpu.h)(0x5D9213CB)
-F (..\Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c)(0x58232FC7)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\system_stm32f4xx.o --omf_browse .\system_stm32f4xx.crf --depend .\system_stm32f4xx.d)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+F (..\Drivers\CMSIS\STM32F4xx\Source\system_stm32f4xx.c)(0x58232FC7)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\system_stm32f4xx.o --omf_browse .\system_stm32f4xx.crf --depend .\system_stm32f4xx.d)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
@@ -440,8 +440,8 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
-F (..\Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s)(0x58232FC8)(--cpu Cortex-M4.fp -g --apcs=interwork -I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 528" --pd "STM32F407xx SETA 1"--list .\startup_stm32f407xx.lst --xref -o .\startup_stm32f407xx.o --depend .\startup_stm32f407xx.d)
-F (..\uCOS II\Source\os_core.c)(0x5AFF654C)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_core.o --omf_browse .\os_core.crf --depend .\os_core.d)
+F (..\Drivers\CMSIS\STM32F4xx\Source\startup_stm32f407xx.s)(0x58232FC8)(--cpu Cortex-M4.fp -g --apcs=interwork -I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 528" --pd "STM32F407xx SETA 1"--list .\startup_stm32f407xx.lst --xref -o .\startup_stm32f407xx.o --depend .\startup_stm32f407xx.d)
+F (..\uCOS II\Source\os_core.c)(0x5AFF654C)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_core.o --omf_browse .\os_core.crf --depend .\os_core.d)
 I (..\uCOS II\Port\includes.h)(0x5BE82B4B)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
@@ -451,15 +451,15 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5CEB79E4)
 I (..\uCOS II\Source\ucos_ii.h)(0x50104F06)
 I (..\uCOS II\Port\os_cfg.h)(0x59F22B0B)
 I (..\uCOS II\Port\os_cpu.h)(0x5D9213CB)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
@@ -482,7 +482,7 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
-F (..\uCOS II\Source\os_flag.c)(0x50104E48)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_flag.o --omf_browse .\os_flag.crf --depend .\os_flag.d)
+F (..\uCOS II\Source\os_flag.c)(0x50104E48)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_flag.o --omf_browse .\os_flag.crf --depend .\os_flag.d)
 I (..\uCOS II\Source\ucos_ii.h)(0x50104F06)
 I (..\uCOS II\Port\includes.h)(0x5BE82B4B)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
@@ -492,15 +492,15 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5CEB79E4)
 I (..\uCOS II\Port\os_cpu.h)(0x5D9213CB)
 I (..\uCOS II\Port\os_cfg.h)(0x59F22B0B)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
@@ -523,7 +523,7 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
-F (..\uCOS II\Source\os_mbox.c)(0x50104E48)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_mbox.o --omf_browse .\os_mbox.crf --depend .\os_mbox.d)
+F (..\uCOS II\Source\os_mbox.c)(0x50104E48)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_mbox.o --omf_browse .\os_mbox.crf --depend .\os_mbox.d)
 I (..\uCOS II\Source\ucos_ii.h)(0x50104F06)
 I (..\uCOS II\Port\includes.h)(0x5BE82B4B)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
@@ -533,15 +533,15 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5CEB79E4)
 I (..\uCOS II\Port\os_cpu.h)(0x5D9213CB)
 I (..\uCOS II\Port\os_cfg.h)(0x59F22B0B)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
@@ -564,7 +564,7 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
-F (..\uCOS II\Source\os_mem.c)(0x501042C0)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_mem.o --omf_browse .\os_mem.crf --depend .\os_mem.d)
+F (..\uCOS II\Source\os_mem.c)(0x501042C0)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_mem.o --omf_browse .\os_mem.crf --depend .\os_mem.d)
 I (..\uCOS II\Port\includes.h)(0x5BE82B4B)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
@@ -574,15 +574,15 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5CEB79E4)
 I (..\uCOS II\Source\ucos_ii.h)(0x50104F06)
 I (..\uCOS II\Port\os_cfg.h)(0x59F22B0B)
 I (..\uCOS II\Port\os_cpu.h)(0x5D9213CB)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
@@ -605,7 +605,7 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
-F (..\uCOS II\Source\os_mutex.c)(0x50104E48)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_mutex.o --omf_browse .\os_mutex.crf --depend .\os_mutex.d)
+F (..\uCOS II\Source\os_mutex.c)(0x50104E48)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_mutex.o --omf_browse .\os_mutex.crf --depend .\os_mutex.d)
 I (..\uCOS II\Source\ucos_ii.h)(0x50104F06)
 I (..\uCOS II\Port\includes.h)(0x5BE82B4B)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
@@ -615,15 +615,15 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5CEB79E4)
 I (..\uCOS II\Port\os_cpu.h)(0x5D9213CB)
 I (..\uCOS II\Port\os_cfg.h)(0x59F22B0B)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
@@ -646,7 +646,7 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
-F (..\uCOS II\Source\os_q.c)(0x50104E48)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_q.o --omf_browse .\os_q.crf --depend .\os_q.d)
+F (..\uCOS II\Source\os_q.c)(0x50104E48)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_q.o --omf_browse .\os_q.crf --depend .\os_q.d)
 I (..\uCOS II\Source\ucos_ii.h)(0x50104F06)
 I (..\uCOS II\Port\includes.h)(0x5BE82B4B)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
@@ -656,15 +656,15 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5CEB79E4)
 I (..\uCOS II\Port\os_cpu.h)(0x5D9213CB)
 I (..\uCOS II\Port\os_cfg.h)(0x59F22B0B)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
@@ -687,7 +687,7 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
-F (..\uCOS II\Source\os_sem.c)(0x50104E48)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_sem.o --omf_browse .\os_sem.crf --depend .\os_sem.d)
+F (..\uCOS II\Source\os_sem.c)(0x50104E48)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_sem.o --omf_browse .\os_sem.crf --depend .\os_sem.d)
 I (..\uCOS II\Source\ucos_ii.h)(0x50104F06)
 I (..\uCOS II\Port\includes.h)(0x5BE82B4B)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
@@ -697,15 +697,15 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5CEB79E4)
 I (..\uCOS II\Port\os_cpu.h)(0x5D9213CB)
 I (..\uCOS II\Port\os_cfg.h)(0x59F22B0B)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
@@ -728,7 +728,7 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
-F (..\uCOS II\Source\os_task.c)(0x50104E48)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_task.o --omf_browse .\os_task.crf --depend .\os_task.d)
+F (..\uCOS II\Source\os_task.c)(0x50104E48)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_task.o --omf_browse .\os_task.crf --depend .\os_task.d)
 I (..\uCOS II\Source\ucos_ii.h)(0x50104F06)
 I (..\uCOS II\Port\includes.h)(0x5BE82B4B)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
@@ -738,15 +738,15 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5CEB79E4)
 I (..\uCOS II\Port\os_cpu.h)(0x5D9213CB)
 I (..\uCOS II\Port\os_cfg.h)(0x59F22B0B)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
@@ -769,7 +769,7 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
-F (..\uCOS II\Source\os_time.c)(0x50104E48)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_time.o --omf_browse .\os_time.crf --depend .\os_time.d)
+F (..\uCOS II\Source\os_time.c)(0x50104E48)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_time.o --omf_browse .\os_time.crf --depend .\os_time.d)
 I (..\uCOS II\Source\ucos_ii.h)(0x50104F06)
 I (..\uCOS II\Port\includes.h)(0x5BE82B4B)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
@@ -779,15 +779,15 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5CEB79E4)
 I (..\uCOS II\Port\os_cpu.h)(0x5D9213CB)
 I (..\uCOS II\Port\os_cfg.h)(0x59F22B0B)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
@@ -810,7 +810,7 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
-F (..\uCOS II\Source\os_tmr.c)(0x50104E48)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_tmr.o --omf_browse .\os_tmr.crf --depend .\os_tmr.d)
+F (..\uCOS II\Source\os_tmr.c)(0x50104E48)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_tmr.o --omf_browse .\os_tmr.crf --depend .\os_tmr.d)
 I (..\uCOS II\Source\ucos_ii.h)(0x50104F06)
 I (..\uCOS II\Port\includes.h)(0x5BE82B4B)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
@@ -820,15 +820,15 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5CEB79E4)
 I (..\uCOS II\Port\os_cpu.h)(0x5D9213CB)
 I (..\uCOS II\Port\os_cfg.h)(0x59F22B0B)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
@@ -852,7 +852,7 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
 F (..\uCOS II\Port\os_cpu_a.asm)(0x5624310B)(--cpu Cortex-M4.fp -g --apcs=interwork -I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 528" --pd "STM32F407xx SETA 1"--list .\os_cpu_a.lst --xref -o .\os_cpu_a.o --depend .\os_cpu_a.d)
-F (..\uCOS II\Port\os_cpu_c.c)(0x53B74783)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_cpu_c.o --omf_browse .\os_cpu_c.crf --depend .\os_cpu_c.d)
+F (..\uCOS II\Port\os_cpu_c.c)(0x53B74783)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER-o .\os_cpu_c.o --omf_browse .\os_cpu_c.crf --depend .\os_cpu_c.d)
 I (..\uCOS II\Port\includes.h)(0x5BE82B4B)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
@@ -862,15 +862,15 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5CEB79E4)
 I (..\uCOS II\Source\ucos_ii.h)(0x50104F06)
 I (..\uCOS II\Port\os_cfg.h)(0x59F22B0B)
 I (..\uCOS II\Port\os_cpu.h)(0x5D9213CB)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
+I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x58232FAE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (..\Drivers\CMSIS\Include\core_cmInstr.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmFunc.h)(0x58232FAE)
 I (..\Drivers\CMSIS\Include\core_cmSimd.h)(0x58232FAE)
-I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
+I (..\Drivers\CMSIS\STM32F4xx\Include\system_stm32f4xx.h)(0x58232FD9)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
