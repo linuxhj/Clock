@@ -159,6 +159,7 @@ void SysTick_Handler(void)
 {
 //  HAL_IncTick();
 	OSIntEnter();		   //进入中断
+	HAL_IncTick();
   OSTimeTick();      //调用ucos的时钟服务程序               
   OSIntExit();       //触发任务切换软中断	
 	

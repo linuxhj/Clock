@@ -18,7 +18,13 @@ extern	uint16_t  setycmd;		     //设置y坐标指令
 extern uint16_t  BRUSH_COLOR;//默认红色    
 extern uint16_t  BACK_COLOR; //背景颜色.默认为白色
 
+#define BITBAND(addr, bitnum) ((addr & 0xF0000000)+0x2000000+((addr &0xFFFFF)<<5)+(bitnum<<2)) 
+#define MEM_ADDR(addr)  *((volatile unsigned long  *)(addr)) 
+#define BIT_ADDR(addr, bitnum)   MEM_ADDR(BITBAND(addr, bitnum)) 
+#define GPIOF_ODR_Addr    (GPIOF_BASE+20) //0x40021414 
 
+#define PFout(n)   BIT_ADDR(GPIOF_ODR_Addr,n)  //输出 
+#define PFin(n)    BIT_ADDR(GPIOF_IDR_Addr,n)  //输入
 //////////////////////////////////////////////////////////////////////////////////	 
 //-----------------LCD背光端口定义---------------- 
 #define	LCD_BACK PFout(10)  //LCD背光    	PF10 	    

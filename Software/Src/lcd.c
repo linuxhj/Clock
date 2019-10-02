@@ -3,26 +3,7 @@
 #include "cfont.h"
 #include "led.h" 
 
-/*
-PE0-----FSMC_NBL0
-PE1-----FSMC_NBL1
-PF0-----FSMC_A0
-PF1-----FSMC_A1
-PF2-----FSMC_A2
-PF3-----FSMC_A3
-PF4-----FSMC_A4
-PF5-----FSMC_A5
-PF12----A6
-PF13----A7
-PF14----A8
-PF15----A9
-PG0-----A10
-PG1-----A11
-PG2-----A12
-PG3-----A13
-PG4-----A14
-PG5-----A15
-*/
+
 /*********************************************************************************
 **********************启明欣欣 STM32F407应用开发板(高配版)************************
 **********************************************************************************
@@ -50,6 +31,9 @@ uint16_t	 write_gramcmd;		//写gram指令
 uint16_t  setxcmd;		      //设置x坐标指令
 uint16_t  setycmd;		      //设置y坐标指令	
 
+
+SRAM_HandleTypeDef hsram4;
+
 void delay_us(uint16_t t)
 {
 }
@@ -57,6 +41,114 @@ void delay_us(uint16_t t)
 void delay_ms(uint16_t t)
 {
 }
+/*
+PE0-----FSMC_NBL0
+PE1-----FSMC_NBL1
+PF0-----FSMC_A0
+PF1-----FSMC_A1
+PF2-----FSMC_A2
+PF3-----FSMC_A3
+PF4-----FSMC_A4
+PF5-----FSMC_A5
+PF12----A6
+PF13----A7
+PF14----A8
+PF15----A9
+PG0-----A10
+PG1-----A11
+PG2-----A12
+PG3-----A13
+PG4-----A14
+PG5-----A15
+*/
+//配置FSMC
+void LCD_FSMC_Config()
+{
+	GPIO_InitTypeDef  GPIO_InitStructure;
+//	FSMC_NORSRAM_InitTypeDef  FSMC_NORSRAMInitStructure;
+//  FSMC_NORSRAM_TimingTypeDef  readWriteTiming; 
+//	FSMC_NORSRAM_TimingTypeDef  writeTiming;
+	FSMC_NORSRAM_TimingTypeDef Timing = {0};
+	
+	__HAL_RCC_GPIOD_CLK_ENABLE();
+	__HAL_RCC_GPIOE_CLK_ENABLE();
+	__HAL_RCC_GPIOF_CLK_ENABLE();
+	__HAL_RCC_GPIOG_CLK_ENABLE();
+	__HAL_RCC_FSMC_CLK_ENABLE();
+	
+	GPIO_InitStructure.Pin = GPIO_PIN_10;        //PF10 推挽输出,控制背光
+  GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP;     //输出模式推挽输出
+  GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_VERY_HIGH; //100MHz
+  HAL_GPIO_Init(GPIOF, &GPIO_InitStructure);            //初始化PF10 
+	
+  /* GPIOD configuration */
+  GPIO_InitStructure.Pin   = GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_4 | GPIO_PIN_5 | GPIO_PIN_8 |
+                             GPIO_PIN_9 | GPIO_PIN_10 | GPIO_PIN_14 | GPIO_PIN_15;
+  GPIO_InitStructure.Mode = GPIO_MODE_AF_PP;      //复用输出
+  GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_VERY_HIGH;//100MHz
+	GPIO_InitStructure.Alternate = GPIO_AF12_FSMC;
+  HAL_GPIO_Init(GPIOD, &GPIO_InitStructure);            //初始化  
+
+  GPIO_InitStructure.Pin = GPIO_PIN_7|GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10 
+                          |GPIO_PIN_11|GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14 
+                          |GPIO_PIN_15;
+//  GPIO_InitStructure.Pin = (0X1FF<<7);         //PE7~15,AF OUT
+  GPIO_InitStructure.Mode = GPIO_MODE_AF_PP;      //复用输出
+  GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_HIGH;//100MHz
+	GPIO_InitStructure.Alternate = GPIO_AF12_FSMC;
+  HAL_GPIO_Init(GPIOE, &GPIO_InitStructure);            //初始化  
+
+	GPIO_InitStructure.Pin = GPIO_PIN_2;         //PG2
+  GPIO_InitStructure.Mode = GPIO_MODE_AF_PP;      //复用输出
+  GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_VERY_HIGH;//100MHz
+	GPIO_InitStructure.Alternate = GPIO_AF12_FSMC;
+  HAL_GPIO_Init(GPIOG, &GPIO_InitStructure);            //初始化  
+
+	GPIO_InitStructure.Pin = GPIO_PIN_12;        //PG12
+  GPIO_InitStructure.Mode = GPIO_MODE_AF_PP;      //复用输出
+	GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_VERY_HIGH;//100MHz
+	GPIO_InitStructure.Alternate = GPIO_AF12_FSMC;
+  HAL_GPIO_Init(GPIOG, &GPIO_InitStructure);            //初始化 
+
+  Timing.AddressSetupTime = 0XF;	 //地址建立时间（ADDSET） 16个HCLK 1/168M=6ns*16=96ns	
+  Timing.AddressHoldTime = 0x00;	 //地址保持时间（ADDHLD）
+  Timing.DataSetupTime = 60;			 //数据保存时间 60个HCLK	= 6*60=360ns
+  Timing.BusTurnAroundDuration = 0x00;
+  Timing.CLKDivision = 0x00;
+  Timing.DataLatency = 0x00;
+  Timing.AccessMode = FSMC_ACCESS_MODE_A;	 
+    
+//	writeTiming.AddressSetupTime =8;	     //地址建立时间（ADDSET）9个HCLK =54ns 
+//  writeTiming.AddressHoldTime = 0x00;	 //地址保持时间 
+//  writeTiming.DataSetupTime = 7;		     //数据保存时间 6ns*9个HCLK=54ns
+//  writeTiming.BusTurnAroundDuration = 0x00;
+//  writeTiming.CLKDivision = 0x00;
+//  writeTiming.DataLatency = 0x00;
+//  writeTiming.AccessMode = FSMC_ACCESS_MODE_A;	 
+  hsram4.Instance  = FSMC_NORSRAM_DEVICE;
+  hsram4.Extended  = FSMC_NORSRAM_EXTENDED_DEVICE;
+	
+  hsram4.Init.NSBank = FSMC_NORSRAM_BANK4;  
+  hsram4.Init.DataAddressMux = FSMC_DATA_ADDRESS_MUX_DISABLE; 
+  hsram4.Init.MemoryType = FSMC_MEMORY_TYPE_SRAM;
+  hsram4.Init.MemoryDataWidth = FSMC_NORSRAM_MEM_BUS_WIDTH_16;   //数据宽度为16bit   
+  hsram4.Init.BurstAccessMode =FSMC_BURST_ACCESS_MODE_DISABLE;
+  hsram4.Init.WaitSignalPolarity = FSMC_WAIT_SIGNAL_POLARITY_LOW;	 
+  hsram4.Init.WrapMode = FSMC_WRAP_MODE_DISABLE;   
+  hsram4.Init.WaitSignalActive = FSMC_WAIT_TIMING_BEFORE_WS;  
+  hsram4.Init.WriteOperation = FSMC_WRITE_OPERATION_ENABLE;	 //写使能
+  hsram4.Init.WaitSignal = FSMC_WAIT_SIGNAL_DISABLE;   
+  hsram4.Init.ExtendedMode = FSMC_EXTENDED_MODE_DISABLE;      //读写使用不同的时序
+  hsram4.Init.AsynchronousWait=FSMC_ASYNCHRONOUS_WAIT_DISABLE;
+	hsram4.Init.WriteBurst = FSMC_WRITE_BURST_DISABLE; 
+  /* Initialize the SRAM controller */
+  if(HAL_SRAM_Init(&hsram4, &Timing, &Timing) != HAL_OK)
+  {
+    /* Initialization Error */
+//    Error_Handler(); 
+  }
+}
+
 /****************************************************************************
 * 名    称: void LCD_WriteReg(uint16_t LCD_Reg, uint16_t LCD_Value)
 * 功    能：LCD写寄存器
@@ -414,83 +506,6 @@ void LCD_Clear(uint16_t color)
 	}
 }
 
-//配置FSMC
-void LCD_FSMC_Config()
-{
-	GPIO_InitTypeDef  GPIO_InitStructure;
-	FSMC_NORSRAM_InitTypeDef  FSMC_NORSRAMInitStructure;
-  FSMC_NORSRAM_TimingTypeDef  readWriteTiming; 
-	FSMC_NORSRAM_TimingTypeDef  writeTiming;
-	
-	__HAL_RCC_GPIOD_CLK_ENABLE();
-	__HAL_RCC_GPIOE_CLK_ENABLE();
-	__HAL_RCC_GPIOF_CLK_ENABLE();
-	__HAL_RCC_GPIOG_CLK_ENABLE();
-	__HAL_RCC_FSMC_CLK_ENABLE();
-	
-	GPIO_InitStructure.Pin = GPIO_PIN_10;        //PF10 推挽输出,控制背光
-  GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP;     //输出模式推挽输出
-  GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_HIGH; //100MHz
-  HAL_GPIO_Init(GPIOF, &GPIO_InitStructure);            //初始化PF10 
-	HAL_GPIO_WritePin(GPIOF, GPIO_PIN_10, GPIO_PIN_SET);//PF10
-	
-  GPIO_InitStructure.Pin = (3<<0)|(3<<4)|(7<<8)|(3<<14); 
-  GPIO_InitStructure.Mode = GPIO_MODE_AF_PP;      //复用输出
-  GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_HIGH;//100MHz
-  HAL_GPIO_Init(GPIOD, &GPIO_InitStructure);            //初始化  
-	
-  GPIO_InitStructure.Pin = (0X1FF<<7);         //PE7~15,AF OUT
-  GPIO_InitStructure.Mode = GPIO_MODE_AF_PP;      //复用输出
-  GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_HIGH;//100MHz
-  HAL_GPIO_Init(GPIOE, &GPIO_InitStructure);            //初始化  
-
-	GPIO_InitStructure.Pin = GPIO_PIN_2;         //PG2
-  GPIO_InitStructure.Mode = GPIO_MODE_AF_PP;      //复用输出
-  GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_HIGH;//100MHz
-  HAL_GPIO_Init(GPIOG, &GPIO_InitStructure);            //初始化  
-
-	GPIO_InitStructure.Pin = GPIO_PIN_12;        //PG12
-  GPIO_InitStructure.Mode = GPIO_MODE_AF_PP;      //复用输出
-  GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_HIGH;//100MHz
-  HAL_GPIO_Init(GPIOG, &GPIO_InitStructure);            //初始化 
-
-  readWriteTiming.AddressSetupTime = 0XF;	 //地址建立时间（ADDSET） 16个HCLK 1/168M=6ns*16=96ns	
-  readWriteTiming.AddressHoldTime = 0x00;	 //地址保持时间（ADDHLD）
-  readWriteTiming.DataSetupTime = 60;			 //数据保存时间 60个HCLK	= 6*60=360ns
-  readWriteTiming.BusTurnAroundDuration = 0x00;
-  readWriteTiming.CLKDivision = 0x00;
-  readWriteTiming.DataLatency = 0x00;
-  readWriteTiming.AccessMode = FSMC_ACCESS_MODE_A;	 
-    
-	writeTiming.AddressSetupTime =8;	     //地址建立时间（ADDSET）9个HCLK =54ns 
-  writeTiming.AddressHoldTime = 0x00;	 //地址保持时间 
-  writeTiming.DataSetupTime = 7;		     //数据保存时间 6ns*9个HCLK=54ns
-  writeTiming.BusTurnAroundDuration = 0x00;
-  writeTiming.CLKDivision = 0x00;
-  writeTiming.DataLatency = 0x00;
-  writeTiming.AccessMode = FSMC_ACCESS_MODE_A;	 
-
-  FSMC_NORSRAMInitStructure.NSBank = FSMC_NORSRAM_BANK4;  
-  FSMC_NORSRAMInitStructure.DataAddressMux = FSMC_DATA_ADDRESS_MUX_DISABLE; 
-  FSMC_NORSRAMInitStructure.MemoryType = FSMC_MEMORY_TYPE_SRAM;
-  FSMC_NORSRAMInitStructure.MemoryDataWidth = FSMC_NORSRAM_MEM_BUS_WIDTH_16;   //数据宽度为16bit   
-  FSMC_NORSRAMInitStructure.BurstAccessMode =FSMC_BURST_ACCESS_MODE_DISABLE;
-  FSMC_NORSRAMInitStructure.WaitSignalPolarity = FSMC_WAIT_SIGNAL_POLARITY_LOW;
-	FSMC_NORSRAMInitStructure.AsynchronousWait=FSMC_ASYNCHRONOUS_WAIT_DISABLE; 
-  FSMC_NORSRAMInitStructure.WrapMode = FSMC_WRAP_MODE_DISABLE;   
-  FSMC_NORSRAMInitStructure.WaitSignalActive = FSMC_WAIT_TIMING_BEFORE_WS;  
-  FSMC_NORSRAMInitStructure.WriteOperation = FSMC_WRITE_OPERATION_ENABLE;	 //写使能
-  FSMC_NORSRAMInitStructure.WaitSignal = FSMC_WAIT_SIGNAL_DISABLE;   
-  FSMC_NORSRAMInitStructure.ExtendedMode = FSMC_EXTENDED_MODE_ENABLE;      //读写使用不同的时序
-  FSMC_NORSRAMInitStructure.WriteBurst = FSMC_WRITE_BURST_DISABLE; 
-//  FSMC_NORSRAMInitStructure.ReadWriteTimingStruct = &readWriteTiming;     //读写时序
-//  FSMC_NORSRAMInitStructure.WriteTimingStruct = &writeTiming;             //写时序
-  FSMC_NORSRAM_Init(FSMC_NORSRAM_DEVICE, &FSMC_NORSRAMInitStructure);  //初始化FSMC
-  FSMC_NORSRAM_WriteOperation_Enable(FSMC_NORSRAM_DEVICE, ENABLE);  //使能Bank1			
-	FSMC_NORSRAM_Timing_Init(FSMC_NORSRAM_DEVICE, &writeTiming, FSMC_NORSRAM_BANK4);	
-//  delay_ms(50); 
-}
-
 uint16_t ILI9341_Read_id(void)
 {
  	 uint16_t id;
@@ -626,8 +641,7 @@ void LCD_Init(void)
 		delay_ms(120);
 		LCD_CMD=0x29; 
 		
-//		LCD_BACK=1;	  //点亮背光
-		HAL_GPIO_WritePin(GPIOF, GPIO_PIN_10, GPIO_PIN_SET);//PF10
+		LCD_BACK=1;	  //点亮背光
 		
 	}
 	else if(lcd_id==0X1963)

@@ -13,7 +13,7 @@ int main(void)
 	LED_Ctrl(LED0, LED_ON);
 	SystemClock_Config();
 	LCD_Init();
-	
+	LCD_Clear(GREEN);
 	while(1);
 	return 0;
 }
