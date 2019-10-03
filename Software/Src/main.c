@@ -1,10 +1,15 @@
 #include "stm32f4xx_hal.h"
 #include "led.h"
 #include "lcd.h"
-
+#include "ucos_ii.h"
 
 static void SystemClock_Config(void);
 static void Error_Handler(void);
+static  void  AppTaskStart (void *p_arg);
+
+#define  APP_CFG_TASK_START_STK_SIZE            256u
+#define  APP_CFG_TASK_START_PRIO                3u
+static  OS_STK       AppTaskStartStk[APP_CFG_TASK_START_STK_SIZE];
 
 int main(void)
 {
@@ -14,9 +19,37 @@ int main(void)
 	SystemClock_Config();
 	LCD_Init();
 	LCD_Clear(GREEN);
-	while(1);
+	for(uint16_t i = 0; i < 320; i++)
+	for(uint16_t j = 0; j < 240; j++)
+	
+	LCD_Color_DrawPoint(j, i, RED);
+	LCD_Color_DrawPoint(50, 20, RED);
+	
+	OSInit();
+	OSTaskCreateExt( AppTaskStart,                              /* Create the start task                                */
+									 0,
+									&AppTaskStartStk[APP_CFG_TASK_START_STK_SIZE - 1],
+									 APP_CFG_TASK_START_PRIO,
+									 APP_CFG_TASK_START_PRIO,
+									&AppTaskStartStk[0],
+									 APP_CFG_TASK_START_STK_SIZE,
+									 0,
+									(OS_TASK_OPT_STK_CHK | OS_TASK_OPT_STK_CLR));	
+	
+	OSStart();	
 	return 0;
 }
+
+static  void  AppTaskStart (void *p_arg)
+{
+	while(1)
+	{
+		LED_Toggle(LED0);
+		OSTimeDly(100);
+	}
+}
+
+
 
 /**
   * @brief  System Clock Configuration

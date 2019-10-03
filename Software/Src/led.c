@@ -67,3 +67,21 @@ void LED_Ctrl(eLED led_name, eLED_MODE mode)
 		}			
 	}
 }
+
+void LED_Toggle(eLED led_name)
+{
+		switch (led_name)
+		{
+			case LED0:
+				HAL_GPIO_TogglePin(PORT_LED0, PIN_LED0);
+				break;
+			case LED1:
+				HAL_GPIO_TogglePin(PORT_LED1, PIN_LED1);
+				break;
+			case LED2:
+				HAL_GPIO_TogglePin(PORT_LED2, PIN_LED2);
+				break;
+			default:
+				break;	
+		}	
+}

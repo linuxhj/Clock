@@ -35,3 +35,11 @@
 .\main.o: ..\Inc\led.h
 .\main.o: ..\Inc\lcd.h
 .\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\main.o: ..\uCOS II\Source\ucos_ii.h
+.\main.o: ..\uCOS II\Port\includes.h
+.\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+.\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\main.o: ..\uCOS II\Source\ucos_ii.h
+.\main.o: ..\uCOS II\Port\os_cpu.h
+.\main.o: ..\uCOS II\Port\os_cfg.h

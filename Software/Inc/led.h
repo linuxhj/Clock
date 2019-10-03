@@ -29,4 +29,5 @@ typedef enum
 
 void LEDInit(void);
 void LED_Ctrl(eLED led_name, eLED_MODE mode);
+void LED_Toggle(eLED led_name);
 #endif
