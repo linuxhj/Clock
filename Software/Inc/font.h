@@ -2,7 +2,7 @@
 #define _FONT_H_
 
 #include "stm32f4xx_hal.h" 
-#include "display.h"
+//#include "display.h"
 
 #define	________	0x0
 #define	_______X	0x1
@@ -266,18 +266,13 @@
 typedef struct GUI_FONT GUI_FONT;
 typedef struct GUI_FONTINFO GUI_FONTINFO;
 
-typedef void GUI_DISPCHAR(uint16_t c);
-typedef int  GUI_GETCHARDISTX(uint16_t c);
-typedef void GUI_GETFONTINFO(const GUI_FONT GUI_UNI_PTR * pFont, GUI_FONTINFO * pfi);
-typedef char GUI_ISINFONT   (const GUI_FONT GUI_UNI_PTR * pFont, uint16_t c);
-
 #define GUI_FONTTYPE_PROP_EXT       \
   GUIPROP_EXT_DispChar,             \
 	GUIPROP_EXT_GetCharDistX,         \
 	GUIPROP_EXT_GetFontInfo,          \
-	GUIPROP_EXT_IsInFont,             \
-  &GUI_ENC_APIList_EXT
-	
+	GUIPROP_EXT_IsInFont
+
+
 struct GUI_FONTINFO{
   uint16_t Flags;
   uint8_t Baseline;
@@ -315,18 +310,26 @@ typedef struct GUI_FONT_PROP_EXT {
   const struct GUI_FONT_PROP_EXT GUI_UNI_PTR * pNext;      /* Pointer to next               */
 } GUI_FONT_PROP_EXT;
 
+extern void GUIPROP_EXT_DispChar(uint16_t c);
+extern int GUIPROP_EXT_GetCharDistX(uint16_t c);	
+extern void GUIPROP_EXT_GetFontInfo(const GUI_FONT GUI_UNI_PTR * pFont, GUI_FONTINFO* pfi);
+extern char GUIPROP_EXT_IsInFont(const GUI_FONT GUI_UNI_PTR * pFont, uint16_t c);
+
+typedef void GUI_DISPCHAR(uint16_t c);
+typedef int  GUI_GETCHARDISTX(uint16_t c);
+typedef void GUI_GETFONTINFO(const GUI_FONT GUI_UNI_PTR * pFont, GUI_FONTINFO * pfi);
+typedef char GUI_ISINFONT   (const GUI_FONT GUI_UNI_PTR * pFont, uint16_t c);
+
 struct GUI_FONT {
-//  GUI_DISPCHAR     * pfDispChar; 
-//  GUI_GETCHARDISTX * pfGetCharDistX; 
-//  GUI_GETFONTINFO  * pfGetFontInfo; 
-//  GUI_ISINFONT     * pfIsInFont;
-//  GUI_GETCHARINFO  * pfGetCharInfo;
-//  const tGUI_ENC_APIList* pafEncode;
+  GUI_DISPCHAR     * pfDispChar; 
+  GUI_GETCHARDISTX * pfGetCharDistX; 
+  GUI_GETFONTINFO  * pfGetFontInfo; 
+  GUI_ISINFONT     * pfIsInFont;
   uint8_t YSize;
   uint8_t YDist;
   uint8_t XMag;
-  uint8_t YMag;
-
+  uint8_t YMag;	
+	const GUI_FONT_PROP_EXT * pProp;
   uint8_t Baseline;
   uint8_t LHeight;     /* Height of a small lower case character (a,x) */
   uint8_t CHeight;     /* Height of a small upper case character (A,X) */
@@ -374,5 +377,7 @@ struct GUI_FONT {
 //    U8 AA_HiResEnable;
 //  #endif
 //};
+
+
 #endif
 

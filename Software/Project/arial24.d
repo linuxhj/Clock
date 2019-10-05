@@ -33,5 +33,3 @@
 .\arial24.o: ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h
 .\arial24.o: ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h
 .\arial24.o: ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h
-.\arial24.o: ..\Inc\display.h
-.\arial24.o: ..\Inc\font.h
