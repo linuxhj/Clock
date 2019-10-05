@@ -35,6 +35,10 @@
 ".\os_tmr.o"
 ".\os_cpu_a.o"
 ".\os_cpu_c.o"
+"..\emWin530\GUI\Library\GUI.lib"
+".\guiconf.o"
+".\lcdconf.o"
+".\simconf.o"
 --strict --scatter ".\Clock.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
