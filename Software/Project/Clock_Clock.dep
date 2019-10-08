@@ -1,5 +1,5 @@
 Dependencies for Project 'Clock', Target 'Clock': (DO NOT MODIFY !)
-F (..\Src\main.c)(0x5D986144)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+F (..\Src\main.c)(0x5D9C9366)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o .\main.o --omf_browse .\main.crf --depend .\main.d)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
@@ -42,6 +42,8 @@ I (C:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x5CEB79E4)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5CEB79E4)
 I (..\uCOS II\Port\os_cpu.h)(0x5D9213CB)
 I (..\uCOS II\Port\os_cfg.h)(0x59F22B0B)
+I (..\Inc\display.h)(0x5D9C8D21)
+I (..\Inc\font.h)(0x5D98A49D)
 F (..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c)(0x58232FE6)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o .\stm32f4xx_hal.o --omf_browse .\stm32f4xx_hal.crf --depend .\stm32f4xx_hal.d)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
@@ -755,8 +757,8 @@ F (..\Src\clock.c)(0x5D986144)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwo
 F (..\Inc\clock.h)(0x5D986142)()
 F (..\Src\rtc.c)(0x5D986144)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o .\rtc.o --omf_browse .\rtc.crf --depend .\rtc.d)
 F (..\Inc\rtc.h)(0x5D986142)()
-F (..\Src\Arial24.c)(0x5D986144)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o .\arial24.o --omf_browse .\arial24.crf --depend .\arial24.d)
-I (..\Inc\font.h)(0x5D98670C)
+F (..\Src\Arial24.c)(0x5D98A740)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o .\arial24.o --omf_browse .\arial24.crf --depend .\arial24.d)
+I (..\Inc\font.h)(0x5D98A49D)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
@@ -789,10 +791,10 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x58232FE6)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
-F (..\Inc\font.h)(0x5D98670C)()
-F (..\Src\display.c)(0x5D986716)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o .\display.o --omf_browse .\display.crf --depend .\display.d)
-I (..\Inc\display.h)(0x5D986400)
-I (..\Inc\font.h)(0x5D98670C)
+F (..\Inc\font.h)(0x5D98A49D)()
+F (..\Src\display.c)(0x5D9C9252)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o .\display.o --omf_browse .\display.crf --depend .\display.d)
+I (..\Inc\display.h)(0x5D9C8D21)
+I (..\Inc\font.h)(0x5D98A49D)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x58232FE6)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x58232F24)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x58232FF3)
@@ -827,7 +829,7 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x58232FF3)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x58232FF3)
 I (..\Inc\lcd.h)(0x5D95B83A)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
-F (..\Inc\display.h)(0x5D986400)()
+F (..\Inc\display.h)(0x5D9C8D21)()
 F (..\Drivers\CMSIS\STM32F4xx\Source\system_stm32f4xx.c)(0x58232FC7)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\Drivers\STM32F4xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\STM32F4xx\Include -I ..\Drivers\CMSIS\Include -I "..\uCOS II\Source" -I "..\uCOS II\Port"-I.\RTE\_Clock-IE:\Software\Keil\keil_lib\Keil.STM32F4xx_DFP.2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o .\system_stm32f4xx.o --omf_browse .\system_stm32f4xx.crf --depend .\system_stm32f4xx.d)
 I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f4xx.h)(0x58232FC8)
 I (..\Drivers\CMSIS\STM32F4xx\Include\stm32f407xx.h)(0x58232FD9)

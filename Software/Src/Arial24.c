@@ -1600,7 +1600,7 @@ GUI_CONST_STORAGE GUI_FONT GUI_FontArial24 = {
   ,24 /* space of font y */
   ,1 /* magnification x */
   ,1 /* magnification y */
-  ,{&GUI_FontArial24_Prop1}
+  ,&GUI_FontArial24_Prop1
   ,19 /* Baseline */
   ,11 /* Height of lowercase characters */
   ,15 /* Height of capital characters */

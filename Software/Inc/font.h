@@ -4,6 +4,10 @@
 #include "stm32f4xx_hal.h" 
 //#include "display.h"
 
+#ifndef GUI_CONST_STORAGE
+  #define GUI_CONST_STORAGE const
+#endif
+	
 #define	________	0x0
 #define	_______X	0x1
 #define	______X_	0x2
@@ -265,6 +269,7 @@
 
 typedef struct GUI_FONT GUI_FONT;
 typedef struct GUI_FONTINFO GUI_FONTINFO;
+typedef struct GUI_CONTEXT GUI_CONTEXT;
 
 #define GUI_FONTTYPE_PROP_EXT       \
   GUIPROP_EXT_DispChar,             \
@@ -335,8 +340,8 @@ struct GUI_FONT {
   uint8_t CHeight;     /* Height of a small upper case character (A,X) */
 };
 
-//struct GUI_CONTEXT {
-///* Variables in LCD module */
+struct GUI_CONTEXT {
+/* Variables in LCD module */
 //  LCD_COLORINDEX_UNION LCD;
 //  LCD_RECT       ClipRect;
 //  U8             DrawMode;
@@ -348,17 +353,17 @@ struct GUI_FONT {
 //  U8        PenShape;
 //  U8        LineStyle;
 //  U8        FillStyle;
-///* Variables in GUICHAR module */
-//  const GUI_FONT           GUI_UNI_PTR * pAFont;
+/* Variables in GUICHAR module */
+  const GUI_FONT           GUI_UNI_PTR * pAFont;
 //  #if GUI_SUPPORT_UNICODE
 //    const GUI_UC_ENC_APILIST * pUC_API;    /* Unicode encoding API */
 //  #endif
 //  I16P LBorder;
-//  I16P DispPosX, DispPosY;
+  int16_t DispPosX, DispPosY;
 //  I16P DrawPosX, DrawPosY;
 //  I16P TextMode, TextAlign;
-//  GUI_COLOR Color, BkColor;           /* Required only when changing devices and for speed opt (caching) */
-///* Variables in WM module */
+  int16_t Color, BkColor;           /* Required only when changing devices and for speed opt (caching) */
+/* Variables in WM module */
 //  #if GUI_WINSUPPORT
 //    const GUI_RECT* WM__pUserClipRect;
 //    GUI_HWIN hAWin;
@@ -376,8 +381,10 @@ struct GUI_FONT {
 //    U8 AA_Factor;
 //    U8 AA_HiResEnable;
 //  #endif
-//};
+};
 
+
+extern GUI_CONST_STORAGE GUI_FONT GUI_FontArial24;
 
 #endif
 

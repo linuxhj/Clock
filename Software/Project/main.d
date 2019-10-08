@@ -43,3 +43,5 @@
 .\main.o: ..\uCOS II\Source\ucos_ii.h
 .\main.o: ..\uCOS II\Port\os_cpu.h
 .\main.o: ..\uCOS II\Port\os_cfg.h
+.\main.o: ..\Inc\display.h
+.\main.o: ..\Inc\font.h

@@ -2,6 +2,8 @@
 #include "led.h"
 #include "lcd.h"
 #include "ucos_ii.h"
+#include "display.h"
+#include "font.h"
 
 static void SystemClock_Config(void);
 static void Error_Handler(void);
@@ -18,13 +20,13 @@ int main(void)
 	LED_Ctrl(LED0, LED_ON);
 	SystemClock_Config();
 	LCD_Init();
-	LCD_Clear(GREEN);
-	for(uint16_t i = 0; i < 320; i++)
-	for(uint16_t j = 0; j < 240; j++)
+	LCD_Clear(BLACK);
+//	for(uint16_t i = 0; i < 320; i++)
+//	for(uint16_t j = 0; j < 240; j++)
 	
-	LCD_Color_DrawPoint(j, i, RED);
-	LCD_Color_DrawPoint(50, 20, RED);
-	
+//	LCD_Color_DrawPoint(j, i, RED);
+//	LCD_Color_DrawPoint(50, 20, BLACK);
+	DisplayFont(10, 10, &GUI_FontArial24.pProp->paCharInfo[50]);
 	OSInit();
 	OSTaskCreateExt( AppTaskStart,                              /* Create the start task                                */
 									 0,
